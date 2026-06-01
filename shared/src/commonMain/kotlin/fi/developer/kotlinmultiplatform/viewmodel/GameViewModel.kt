@@ -3,22 +3,46 @@ package fi.developer.kotlinmultiplatform.viewmodel
 import fi.developer.kotlinmultiplatform.model.GameState
 import fi.developer.kotlinmultiplatform.model.WordGameHistory
 import fi.developer.kotlinmultiplatform.model.WordItem
+import kotlinmultiplatform.shared.generated.resources.Res
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
 
-class GameViewModel(initialWords: List<WordItem>) {
+class GameViewModel() { // Removed 'initialWords' from the constructor parameter
     private val _uiState = MutableStateFlow(
-        GameState(
-            wordPool = initialWords,
-            currentTestId = "session_${ClockSystem.now()}"
-        )
+        GameState(currentTestId = "session_${ClockSystem.now()}")
     )
     val uiState: StateFlow<GameState> = _uiState.asStateFlow()
 
     init {
-        generateNextRound()
+        loadWordsAsset()
+    }
+
+    private fun loadWordsAsset() {
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                val bytes = Res.readBytes("files/words.json")
+                val jsonString = bytes.decodeToString()
+                val parsedPool = Json.decodeFromString<List<WordItem>>(jsonString)
+
+                _uiState.update { old ->
+                    old.copy(
+                        wordPool = parsedPool,
+                        isLoading = false
+                    )
+                }
+
+                generateNextRound()
+            } catch (e: Exception) {
+                println("KMP Asset Parsing Error: ${e.message}")
+            }
+        }
     }
 
     fun toggleGameMode(textMode: Boolean) {
@@ -38,6 +62,13 @@ class GameViewModel(initialWords: List<WordItem>) {
         _uiState.update { it.copy(showHistory = !it.showHistory) }
     }
 
+    val isSelectionEmpty: Boolean
+        get() = if (_uiState.value.isTextInputMode) {
+            _uiState.value.typedInput.trim().isEmpty()
+        } else {
+            _uiState.value.selectedOption.isEmpty()
+        }
+
     fun verifySelection(onAnswerEvaluated: (Boolean) -> Unit) {
         val state = _uiState.value
         val target = state.currentWord ?: return
@@ -46,7 +77,7 @@ class GameViewModel(initialWords: List<WordItem>) {
         if (userAnswer.isEmpty()) return
 
         val isCorrect = userAnswer.equals(target.eng, ignoreCase = true)
-        onAnswerEvaluated(isCorrect) // Callback to let UI play platform audio if desired
+        onAnswerEvaluated(isCorrect)
 
         _uiState.update { old ->
             old.copy(
@@ -63,7 +94,14 @@ class GameViewModel(initialWords: List<WordItem>) {
         if (pool.isEmpty()) return
 
         val target = pool.random()
-        val distractors = pool.filter { it.id != target.id }.shuffled().take(2).map { it.eng }
+
+        // Take 2 distinct wrong answers as distractors
+        val distractors = pool
+            .filter { it.id != target.id }
+            .shuffled()
+            .take(2)
+            .map { it.eng }
+
         val options = (distractors + target.eng).shuffled()
 
         _uiState.update { old ->
@@ -97,7 +135,6 @@ class GameViewModel(initialWords: List<WordItem>) {
     }
 }
 
-// Minimal cross-platform placeholder clock timestamp generator
 object ClockSystem {
-    fun now(): Long = 1717270000000L // Implement via expect/actual or simple systemic wrapper if needed
+    fun now(): Long = 1717270000000L
 }

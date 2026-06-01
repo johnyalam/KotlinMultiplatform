@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "fin": "minä",
+    "eng": "I"
+  },
+  {
+    "id": 2,
+    "fin": "sinä",
+    "eng": "you"
+  },
+  {
+    "id": 3,
+    "fin": "hän",
+    "eng": "he / she"
+  },
+  {
+    "id": 4,
+    "fin": "me",
+    "eng": "we"
+  },
+  {
+    "id": 5,
+    "fin": "te",
+    "eng": "you (plural)"
+  },
+  {
+    "id": 6,
+    "fin": "he",
+    "eng": "they"
+  },
+  {
+    "id": 7,
+    "fin": "olla",
+    "eng": "to be"
+  },
+  {
+    "id": 8,
+    "fin": "olen",
+    "eng": "I am"
+  },
+  {
+    "id": 9,
+    "fin": "on",
+    "eng": "is / has"
+  },
+  {
+    "id": 10,
+    "fin": "nimi",
+    "eng": "name"
+  },
+  {
+    "id": 11,
+    "fin": "lapsi",
+    "eng": "child"
+  },
+  {
+    "id": 12,
+    "fin": "poika",
+    "eng": "boy / son"
+  },
+  {
+    "id": 13,
+    "fin": "tyttö",
+    "eng": "girl / daughter"
+  },
+  {
+    "id": 14,
+    "fin": "vaimo",
+    "eng": "wife"
+  },
+  {
+    "id": 15,
+    "fin": "mies",
+    "eng": "man / husband"
+  },
+  {
+    "id": 16,
+    "fin": "perhe",
+    "eng": "family"
+  },
+  {
+    "id": 17,
+    "fin": "ystävä",
+    "eng": "friend"
+  },
+  {
+    "id": 18,
+    "fin": "koti",
+    "eng": "home"
+  },
+  {
+    "id": 19,
+    "fin": "talo",
+    "eng": "house"
+  },
+  {
+    "id": 20,
+    "fin": "huone",
+    "eng": "room"
+  },
+  {
+    "id": 21,
+    "fin": "Suomi",
+    "eng": "Finland"
+  },
+  {
+    "id": 22,
+    "fin": "suomi",
+    "eng": "Finnish language"
+  },
+  {
+    "id": 23,
+    "fin": "englanti",
+    "eng": "English language"
+  },
+  {
+    "id": 24,
+    "fin": "kaupunki",
+    "eng": "city"
+  },
+  {
+    "id": 25,
+    "fin": "työ",
+    "eng": "work"
+  },
+  {
+    "id": 26,
+    "fin": "toimisto",
+    "eng": "office"
+  },
+  {
+    "id": 27,
+    "fin": "ohjelmistokehittäjä",
+    "eng": "software developer"
+  },
+  {
+    "id": 28,
+    "fin": "opiskella",
+    "eng": "to study"
+  },
+  {
+    "id": 29,
+    "fin": "oppia",
+    "eng": "to learn"
+  },
+  {
+    "id": 30,
+    "fin": "koulu",
+    "eng": "school"
+  },
+  {
+    "id": 31,
+    "fin": "kirja",
+    "eng": "book"
+  },
+  {
+    "id": 32,
+    "fin": "kynä",
+    "eng": "pen"
+  },
+  {
+    "id": 33,
+    "fin": "pöytä",
+    "eng": "table"
+  },
+  {
+    "id": 34,
+    "fin": "tuoli",
+    "eng": "chair"
+  },
+  {
+    "id": 35,
+    "fin": "auto",
+    "eng": "car"
+  },
+  {
+    "id": 36,
+    "fin": "bussi",
+    "eng": "bus"
+  },
+  {
+    "id": 37,
+    "fin": "juna",
+    "eng": "train"
+  },
+  {
+    "id": 38,
+    "fin": "tie",
+    "eng": "road"
+  },
+  {
+    "id": 39,
+    "fin": "kuljettaja",
+    "eng": "driver"
+  },
+  {
+    "id": 40,
+    "fin": "asiakas",
+    "eng": "customer / passenger"
+  },
+  {
+    "id": 41,
+    "fin": "ruoka",
+    "eng": "food"
+  },
+  {
+    "id": 42,
+    "fin": "vesi",
+    "eng": "water"
+  },
+  {
+    "id": 43,
+    "fin": "kahvi",
+    "eng": "coffee"
+  },
+  {
+    "id": 44,
+    "fin": "tee",
+    "eng": "tea"
+  },
+  {
+    "id": 45,
+    "fin": "maito",
+    "eng": "milk"
+  },
+  {
+    "id": 46,
+    "fin": "omena",
+    "eng": "apple"
+  },
+  {
+    "id": 47,
+    "fin": "banaani",
+    "eng": "banana"
+  },
+  {
+    "id": 48,
+    "fin": "leipä",
+    "eng": "bread"
+  },
+  {
+    "id": 49,
+    "fin": "riisi",
+    "eng": "rice"
+  },
+  {
+    "id": 50,
+    "fin": "kana",
+    "eng": "chicken"
+  },
+  {
+    "id": 51,
+    "fin": "hedelmä",
+    "eng": "fruit"
+  },
+  {
+    "id": 52,
+    "fin": "vihannes",
+    "eng": "vegetable"
+  },
+  {
+    "id": 53,
+    "fin": "syödä",
+    "eng": "to eat"
+  },
+  {
+    "id": 54,
+    "fin": "juoda",
+    "eng": "to drink"
+  },
+  {
+    "id": 55,
+    "fin": "kävellä",
+    "eng": "to walk"
+  },
+  {
+    "id": 56,
+    "fin": "juosta",
+    "eng": "to run"
+  },
+  {
+    "id": 57,
+    "fin": "nukkua",
+    "eng": "to sleep"
+  },
+  {
+    "id": 58,
+    "fin": "herätä",
+    "eng": "to wake up"
+  },
+  {
+    "id": 59,
+    "fin": "mennä",
+    "eng": "to go"
+  },
+  {
+    "id": 60,
+    "fin": "tulla",
+    "eng": "to come"
+  },
+  {
+    "id": 61,
+    "fin": "tehdä",
+    "eng": "to do / make"
+  },
+  {
+    "id": 62,
+    "fin": "puhua",
+    "eng": "to speak"
+  },
+  {
+    "id": 63,
+    "fin": "kuunnella",
+    "eng": "to listen"
+  },
+  {
+    "id": 64,
+    "fin": "katsoa",
+    "eng": "to watch / look"
+  },
+  {
+    "id": 65,
+    "fin": "lukea",
+    "eng": "to read"
+  },
+  {
+    "id": 66,
+    "fin": "kirjoittaa",
+    "eng": "to write"
+  },
+  {
+    "id": 67,
+    "fin": "pitää",
+    "eng": "to like"
+  },
+  {
+    "id": 68,
+    "fin": "tykätä",
+    "eng": "to like"
+  },
+  {
+    "id": 69,
+    "fin": "hyvä",
+    "eng": "good"
+  },
+  {
+    "id": 70,
+    "fin": "huono",
+    "eng": "bad"
+  },
+  {
+    "id": 71,
+    "fin": "iso",
+    "eng": "big"
+  },
+  {
+    "id": 72,
+    "fin": "pieni",
+    "eng": "small"
+  },
+  {
+    "id": 73,
+    "fin": "uusi",
+    "eng": "new"
+  },
+  {
+    "id": 74,
+    "fin": "vanha",
+    "eng": "old"
+  },
+  {
+    "id": 75,
+    "fin": "kaunis",
+    "eng": "beautiful"
+  },
+  {
+    "id": 76,
+    "fin": "onnellinen",
+    "eng": "happy"
+  },
+  {
+    "id": 77,
+    "fin": "surullinen",
+    "eng": "sad"
+  },
+  {
+    "id": 78,
+    "fin": "väsynyt",
+    "eng": "tired"
+  },
+  {
+    "id": 79,
+    "fin": "terve",
+    "eng": "healthy"
+  },
+  {
+    "id": 80,
+    "fin": "sairas",
+    "eng": "sick"
+  },
+  {
+    "id": 81,
+    "fin": "aamu",
+    "eng": "morning"
+  },
+  {
+    "id": 82,
+    "fin": "päivä",
+    "eng": "day"
+  },
+  {
+    "id": 83,
+    "fin": "ilta",
+    "eng": "evening"
+  },
+  {
+    "id": 84,
+    "fin": "yö",
+    "eng": "night"
+  },
+  {
+    "id": 85,
+    "fin": "tänään",
+    "eng": "today"
+  },
+  {
+    "id": 86,
+    "fin": "huomenna",
+    "eng": "tomorrow"
+  },
+  {
+    "id": 87,
+    "fin": "eilen",
+    "eng": "yesterday"
+  },
+  {
+    "id": 88,
+    "fin": "nyt",
+    "eng": "now"
+  },
+  {
+    "id": 89,
+    "fin": "kyllä",
+    "eng": "yes"
+  },
+  {
+    "id": 90,
+    "fin": "ei",
+    "eng": "no / not"
+  },
+  {
+    "id": 91,
+    "fin": "kiitos",
+    "eng": "thank you"
+  },
+  {
+    "id": 92,
+    "fin": "ole hyvä",
+    "eng": "you're welcome"
+  },
+  {
+    "id": 93,
+    "fin": "hei",
+    "eng": "hi"
+  },
+  {
+    "id": 94,
+    "fin": "moi",
+    "eng": "hello"
+  },
+  {
+    "id": 95,
+    "fin": "näkemiin",
+    "eng": "goodbye"
+  },
+  {
+    "id": 96,
+    "fin": "anteeksi",
+    "eng": "sorry / excuse me"
+  },
+  {
+    "id": 97,
+    "fin": "mitä",
+    "eng": "what"
+  },
+  {
+    "id": 98,
+    "fin": "missä",
+    "eng": "where"
+  },
+  {
+    "id": 99,
+    "fin": "milloin",
+    "eng": "when"
+  },
+  {
+    "id": 100,
+    "fin": "miksi",
+    "eng": "why"
+  }
+]

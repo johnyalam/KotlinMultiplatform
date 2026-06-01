@@ -13,5 +13,6 @@ data class GameState(
     val questionCount: Int = 0,
     val showHistory: Boolean = false,
     val historyLogs: List<WordGameHistory> = emptyList(),
-    val currentTestId: String = ""
+    val currentTestId: String = "",
+    val isLoading: Boolean = true // Added flag to show a loading indicator in UI
 )
