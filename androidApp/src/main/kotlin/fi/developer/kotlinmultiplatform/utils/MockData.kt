@@ -1,6 +1,6 @@
 package fi.developer.kotlinmultiplatform.utils
 
-import fi.developer.kotlinmultiplatform.model.WordItem
+import fi.developer.kotlinmultiplatform.model.word.WordItem
 
 class MockData {
     companion object {

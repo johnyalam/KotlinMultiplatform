@@ -1,4 +1,4 @@
-package fi.developer.kotlinmultiplatform.model
+package fi.developer.kotlinmultiplatform.model.word
 
 data class GameState(
     val wordPool: List<WordItem> = emptyList(),

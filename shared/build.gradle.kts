@@ -60,10 +60,15 @@ kotlin {
 
             // Add this line for JSON parsing
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.ktor.serialization.kotlinx.json)
 
             // Ktor Client
             implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.cio)
             implementation(libs.ktor.client.content.negotiation)
+
+            // Logging
+            implementation(libs.ktor.client.logging)
 
             // Coroutines
             implementation(libs.kotlinx.coroutines.core)
