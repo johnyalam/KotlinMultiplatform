@@ -1,4 +1,4 @@
-package fi.developer.kotlinmultiplatform.ui
+package fi.developer.kotlinmultiplatform.ui.screens.word
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.fillMaxWidth

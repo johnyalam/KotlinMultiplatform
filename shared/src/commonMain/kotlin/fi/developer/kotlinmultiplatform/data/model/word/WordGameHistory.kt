@@ -1,4 +1,4 @@
-package fi.developer.kotlinmultiplatform.model
+package fi.developer.kotlinmultiplatform.data.model.word
 
 import kotlinx.serialization.Serializable
 

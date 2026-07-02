@@ -1,4 +1,4 @@
-package fi.developer.kotlinmultiplatform.ui
+package fi.developer.kotlinmultiplatform.ui.screens.word
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import fi.developer.kotlinmultiplatform.viewmodel.GameViewModel
+import fi.developer.kotlinmultiplatform.presentation.viewmodel.word.GameViewModel
 
 @Composable
 fun WordGameScreen(viewModel: GameViewModel) {

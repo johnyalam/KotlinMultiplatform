@@ -1,8 +1,8 @@
-package fi.developer.kotlinmultiplatform.viewmodel
+package fi.developer.kotlinmultiplatform.presentation.viewmodel.word
 
-import fi.developer.kotlinmultiplatform.model.GameState
-import fi.developer.kotlinmultiplatform.model.WordGameHistory
-import fi.developer.kotlinmultiplatform.model.WordItem
+import fi.developer.kotlinmultiplatform.data.model.word.GameState
+import fi.developer.kotlinmultiplatform.data.model.word.WordGameHistory
+import fi.developer.kotlinmultiplatform.data.model.word.WordItem
 import kotlinmultiplatform.shared.generated.resources.Res
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
