@@ -1,4 +1,4 @@
-package fi.developer.kotlinmultiplatform.model.coin
+package fi.developer.kotlinmultiplatform.data.model.coin
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

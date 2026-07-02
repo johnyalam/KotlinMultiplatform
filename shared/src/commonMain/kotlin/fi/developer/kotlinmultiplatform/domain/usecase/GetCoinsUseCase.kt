@@ -1,14 +1,14 @@
 package fi.developer.kotlinmultiplatform.domain.usecase
 
-import fi.developer.kotlinmultiplatform.data.repository.ICoinRepository
-import fi.developer.kotlinmultiplatform.model.coin.CoinItem
-import fi.developer.kotlinmultiplatform.utils.Resource
+import fi.developer.kotlinmultiplatform.data.repository.CoinRepositoryInterface
+import fi.developer.kotlinmultiplatform.data.model.coin.CoinItem
+import fi.developer.kotlinmultiplatform.data.model.coin.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.io.IOException
 
 class GetCoinsUseCase(
-    private val coinRepository: ICoinRepository,
+    private val coinRepository: CoinRepositoryInterface,
 ) {
     operator fun invoke(): Flow<Resource<List<CoinItem>>> = flow {
         try {

@@ -1,16 +1,16 @@
 package fi.developer.kotlinmultiplatform.data.remote
 
-import fi.developer.kotlinmultiplatform.model.coin.CoinDetails
-import fi.developer.kotlinmultiplatform.model.coin.CoinItem
+import fi.developer.kotlinmultiplatform.data.model.coin.CoinDetails
+import fi.developer.kotlinmultiplatform.data.model.coin.CoinItem
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
 
 
 
-class NetworkApi(
+class CoinApi(
     private val httpClient: HttpClient,
-) : INetworkApi {
+) : CoinApiInterface {
     private val baseUrl = "https://api.coinpaprika.com/v1"
 
     override suspend fun getCoins(): List<CoinItem> {
