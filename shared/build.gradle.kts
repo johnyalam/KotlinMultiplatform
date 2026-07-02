@@ -47,6 +47,7 @@ kotlin {
             implementation(libs.ktor.client.okhttp)
             implementation(libs.ktor.client.android)
             implementation(libs.kotlinx.coroutines.android)
+            implementation(libs.koin.core)
         }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
@@ -72,6 +73,11 @@ kotlin {
 
             // Coroutines
             implementation(libs.kotlinx.coroutines.core)
+
+            // Koin Core & Compose Multiplatform integration
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
         }
 
         iosMain.dependencies {
