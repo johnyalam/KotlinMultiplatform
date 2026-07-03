@@ -21,9 +21,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import fi.developer.kotlinmultiplatform.presentation.viewmodel.coin.CoinViewModel
+import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
-fun CoinListScreen(viewModel: CoinViewModel) {
+fun CoinListScreen(viewModel: CoinViewModel = koinViewModel()) {
     val state by viewModel.state.collectAsState()
 
     Scaffold(

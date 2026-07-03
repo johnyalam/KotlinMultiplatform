@@ -6,11 +6,9 @@ import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
 
-
-
 class CoinApi(
     private val httpClient: HttpClient,
-) : CoinApiInterface {
+) : ICoinApi {
     private val baseUrl = "https://api.coinpaprika.com/v1"
 
     override suspend fun getCoins(): List<CoinItem> {
